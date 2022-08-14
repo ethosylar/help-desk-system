@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="./helpdeskcss.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="ISO-8859-1">
+<title>Customer Service Razer</title>
+</head>
+<body>
+	<nav
+		class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+
+
+		<div class="topbar-divider d-none d-sm-block"></div>
+		<img
+			src="https://hybrismedianonprods1.blob.core.windows.net/sys-master-phoenix-images-container/h6c/h6b/9559620911134/razer-ths-logo.svg"
+			alt="Razer Logo" style="width: 5%; height: 5%;"> <span
+			class="mr-2 d-none d-lg-inline text-gray-600 small">Home</span>
+
+
+	</nav>
+	<div class="container">
+		<div class="col-sm-6">
+			<form method="post" action="TicketController">
+				<div class="form-group">
+					<label for="fullname">Full name</label> <input id="fullname"
+						name="fullname" type="text" required="required"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="phoneno">Phone No</label> <input id="phoneno"
+						name="phoneno" type="tel" required="required" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label> <input id="email" name="email"
+						type="email" required="required" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Prefer Contact By:</label>
+					<div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="contact-type" id="contact-type_0" type="radio"
+								required="required" class="custom-control-input" value="1">
+							<label for="contact-type_0" class="custom-control-label">Email</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="contact-type" id="contact-type_1" type="radio"
+								required="required" class="custom-control-input" value="2">
+							<label for="contact-type_1" class="custom-control-label">Phone
+								No</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Types of Purchase:</label>
+					<div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="purchase-type" id="purchase-type_0" type="radio"
+								required="required" class="custom-control-input"
+								value="Individual"> <label for="purchase-type_0"
+								class="custom-control-label">Individual</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="purchase-type" id="purchase-type_1" type="radio"
+								required="required" class="custom-control-input"
+								value="Education"> <label for="purchase-type_1"
+								class="custom-control-label">Education</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="purchase-type" id="purchase-type_2" type="radio"
+								required="required" class="custom-control-input"
+								value="Business"> <label for="purchase-type_2"
+								class="custom-control-label">Business</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="purchase-type" id="purchase-type_3" type="radio"
+								required="required" class="custom-control-input"
+								value="Streaming"> <label for="purchase-type_3"
+								class="custom-control-label">Streaming</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="purchase-type" id="purchase-type_4" type="radio"
+								required="required" class="custom-control-input" value="Gaming">
+							<label for="purchase-type_4" class="custom-control-label">Gaming</label>
+						</div>
+					</div>
+				</div>
+				<!-- 
+				<div class="form-group">
+					<label for="date">Date</label> <input id="date" name="date"
+						type="date" required="required" class="form-control">
+				</div>
+				 -->
+				<div class="form-group">
+					<label for="min-budget">Minimum Budget</label> <input
+						id="min-budget" name="min-budget" type="number" min="0"
+						step="0.01" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="max-budget">Maximum Budget:</label> <input
+						id="max-budget" name="max-budget" type="number" min="0"
+						step="0.01" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Time frame of purchase:</label>
+					<div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_0" type="radio"
+								class="custom-control-input" value="Less than 2 weeks">
+							<label for="time-frame_0" class="custom-control-label">Less
+								than 2 weeks</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_1" type="radio"
+								class="custom-control-input" value="3-4 Weeks"> <label
+								for="time-frame_1" class="custom-control-label">3-4
+								Weeks</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_2" type="radio"
+								class="custom-control-input" value="1-2 Months"> <label
+								for="time-frame_2" class="custom-control-label">1-2
+								Months</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_3" type="radio"
+								class="custom-control-input" value="More than 3 months">
+							<label for="time-frame_3" class="custom-control-label">More
+								than 3 months</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_4" type="radio"
+								class="custom-control-input" value="More than 6 months">
+							<label for="time-frame_4" class="custom-control-label">More
+								than 6 months</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="time-frame" id="time-frame_5" type="radio"
+								class="custom-control-input" value="Not yet decided"> <label
+								for="time-frame_5" class="custom-control-label">Not yet
+								decided</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="products">I'm interested to buy:</label>
+					<div>
+						<select id="products" name="products" class="custom-select">
+							<option value="PC">PC</option>
+							<option value="Console">Console</option>
+							<option value="Headphone">Headphone</option>
+							<option value="Microphone">Microphone</option>
+							<option value="Graphic Cards">Graphic Cards</option>
+							<option value="Laptop">Laptop</option>
+							<option value="PC Accessories">PC Accessories</option>
+							<option value="Mice">Mice</option>
+							<option value="Mouse Mats">Mouse Mats</option>
+							<option value="Keyboard">Keyboard</option>
+							<option value="Webcams">Webcams</option>
+							<option value="Capture Cards">Capture Cards</option>
+							<option value="Wearables">Wearables</option>
+							<option value="Chair">Chair</option>
+							<option value="Smart Glasses">Smart Glasses</option>
+							<option value="Mobile Accessories">Mobile Accessories</option>
+							<option value="Cases">Cases</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="quantity">Product Quantity:</label> <input
+						id="quantity" name="quantity" type="number" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="comment">Please indicate any value code or
+						products you are interested in. Comments, Enquiries, Instructions:</label>
+					<textarea id="comment" name="comment" cols="40" rows=""
+						class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
